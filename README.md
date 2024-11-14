@@ -4,7 +4,7 @@ This is the final project of ECE143. The purpose of this project is to analyze t
 ### Attention！！！
 If you need to upload new code, please synchronize the local repository first, add changes, and then send a pull request. Otherwise, the latest progress may be lost. **Please pay attention!!!**
 
-**If you are using Githud for the first time, [read this](https://docs.github.com/en).**
+**If you are using GitHud for the first time, [read this](https://docs.github.com/en).**
 
 ### The directory structure is as follows：
 ```
