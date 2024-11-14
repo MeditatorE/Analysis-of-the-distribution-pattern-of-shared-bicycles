@@ -7,8 +7,13 @@ If you need to upload new code, please synchronize the local repository first, a
 ### The directory structure is as follows：
 ```
 /main/
-├── Data_analysis.ipynb
-├── source
+├── data_analysis.ipynb
+├── sources
+│   ├── data1.csv
+│   ├── data2.csv
+│   └── ...
 ├── YOUR FOLDER
+│   ├── YOUR_CODE.ipynb
+│   └── ...
 └── ...
 ```
