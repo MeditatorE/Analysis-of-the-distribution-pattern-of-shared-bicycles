@@ -26,7 +26,7 @@ python data_analysis.py
 
 **[Member_new.ipynb](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/Member_new.ipynb)**: This file is a supplementary file for membership analysis, and its content has been integrated into [Visualization and Prediction Models.ipynb](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/Visualization%20and%20Prediction%20Models.ipynb).
 
-[sources](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/tree/main/sources): This folder is used to store the original data. You should download the original data on **[Kaggle](https://www.kaggle.com/datasets/taweilo/capital-bikeshare-dataset-202005202408/data)** and put it in this folder.
+**[sources](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/tree/main/sources)**: This folder is used to store the original data. You should download the original data on **[Kaggle](https://www.kaggle.com/datasets/taweilo/capital-bikeshare-dataset-202005202408/data)** and put it in this folder.
 
 
 
