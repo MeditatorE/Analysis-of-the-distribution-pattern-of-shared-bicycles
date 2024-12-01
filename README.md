@@ -5,9 +5,9 @@ This is the final project for ECE143. The goal of this project is to analyze the
 1. Clone this repo
 ```
 git clone https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles.git
-cd Face-time-travel-machine-main
+cd Analysis-of-the-distribution-pattern-of-shared-bicycles-main
 ```
-3. Please download the corresponding data on [Kaggle](https://www.kaggle.com/datasets/taweilo/capital-bikeshare-dataset-202005202408/data) and put the data in the [sources folder](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/tree/main/sources).
+2. Please download the corresponding data on [Kaggle](https://www.kaggle.com/datasets/taweilo/capital-bikeshare-dataset-202005202408/data) and put the data in the [sources folder](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/tree/main/sources).
 
 ### Attention！！！
 If you need to upload new code, please synchronize the local repository first, add changes, and then send a pull request. Otherwise, the latest progress may be lost. **Please pay attention!!!**
