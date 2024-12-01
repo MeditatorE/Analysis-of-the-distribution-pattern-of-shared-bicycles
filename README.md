@@ -252,12 +252,14 @@ We analyzed the total rental data over the past four years and found that the da
 We then use heat maps to represent the periodic changes in the number of bicycle rentals over the course of a year and day. We aggregate rental records that fall within the same half-hour interval each month. It can be seen that during the year, the rental volume reaches the peak in summer and the trough in winter, **further indicating that the rental volume is greatly affected by the season**; in the daily cycle, the rental volume increases significantly during the morning peak and evening peak hours. Especially the evening peak is the most obvious peak period.
 ![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/heatmap_rental_quantities.png)
 
+
 ### 3.2 Analyze the impact of weather on rental quantity
 As can be seen from the bar chart, snowy days have the greatest impact on bicycle rental volume, which is only 28% of the average value. The second is windy days, with rental volume of 56% of the average value. In addition, cloudy and rainy days also have lower rental volume than the average, while sunny and cloudy days have higher rental volume than the average.
 ![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/weather_avg.png)
 
 We also visualized the weather for each day and the number of rentals for that day.
 ![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/weather_rent_num.png)
+
 
 #### 3.2.1 Quantifying the impact of weather on rental numbers
 To quantify the impact of weather on rental volume, we use significance analysis to evaluate the impact
@@ -288,6 +290,7 @@ snow                F-statistic: 87.119, P-value: 0.000
 wind                F-statistic: 2.299, P-value: 0.134
 ```
 
+
 #### 3.2.2 Quantifying the importance of the impact of different weather features on leasing volumes
 Now we know that the daily bicycle rental volume is affected by season (3.1 Conclusion) and weather (3.2 Conclusion), and we have weather data for each of the past four years. There are 24 features in total, namely
 ```
@@ -298,6 +301,7 @@ features = [
 "cloudcover", "visibility", "solarradiation", "solarenergy", "uvindex",
 "severerisk" ]
 ```
+
 
 We need to evaluate the impact index of each feature on the weather. We use importance evaluation to quantify this indicator and use the **XGBoost** model to evaluate the importance of different features. The results are:
 ```
@@ -327,6 +331,7 @@ Feature: uvindex, Importance: 0.3164701759815216
 Feature: severerisk, Importance: 0.2160860151052475
 ```
 ![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/Feature%20Importance%20XGBoost.png)
+
 
 The error of this model is:
 ```
