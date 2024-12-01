@@ -306,6 +306,15 @@ features = [
 
 We need to evaluate the impact index of each feature on the weather. We use importance evaluation to quantify this indicator and use the **XGBoost** model to evaluate the importance of different features. The results are:
 ```
+# Initialize the XGBoost regressor
+xgb_model = XGBRegressor(
+    n_estimators=1000,      # Number of trees
+    learning_rate=0.01,     # Learning Rate
+    max_depth=5,           # Maximum depth of the tree
+    random_state=42
+)
+```
+```
 Feature: tempmax, Importance: 0.03388049080967903
 Feature: tempmin, Importance: 0.012917473912239075
 Feature: temp, Importance: 0.04539528116583824
@@ -350,6 +359,21 @@ After getting the importance of each feature, we try to use seasonal and weather
 The Prophet model is a time series forecasting model designed for processing data with obvious seasonal components and trend changes. Our data is a seasonal periodic change data, which is very suitable for this model.
 
 We then add each important weather feature as a regression variable for Prophet training. The training results are:
+```
+# Define the Prophet model
+model = Prophet()
+
+# Add all weather-related regressors
+weather_features = [
+"uvindex", "severerisk", "feelslike", "solarenergy", "temp",
+"feelslikemin", "tempmax", "solarradiation", "precipcover",
+"tempmin", "precip", "visibility", "preciptype", "cloudcover",
+"windspeed" ]
+
+# Add each feature as a regressor in Prophet
+for feature in weather_features:
+    model.add_regressor(feature)
+```
 ```
 Mean Squared Error (MSE): 3907222.9902083008
 Mean Absolute Error (MAE): 1458.3266245041264
