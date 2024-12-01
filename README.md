@@ -398,6 +398,11 @@ Among all rental records, **60% are used by members and 40% are non-members.** A
 #### 3.6.2 User behavior analysis
 We made statistics on the riding time of each record and drew a histogram. Most rides are under 20 minutes. There are significantly more members than non-members who ride for less than 30 minutes; and more non-members for more than 30 minutes.
 
+![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/Ride_duration_marked.png)
 
+**Conclusion:** 
+**It can be speculated that when users need to ride a lot of short distances (such as commuting to get off work every day), they are more inclined to join the membership. Users who occasionally go on long rides may not choose to become a member.**
+
+**But there is still a large number of short-distance cyclists who are not members. For non-member users who often ride short distances, they should be attracted to become members. For example, advertisements can be placed at morning and evening peak hours at office area sites. Although the proportion is small, there are still a certain number of long-distance cyclists. Different strategies can be used, such as "you can enjoy discounts on membership fees if you ride for more than one hour" to attract users to gradually convert from a long-distance ride to a member.**
 
 
