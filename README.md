@@ -256,6 +256,7 @@ We then use heat maps to represent the periodic changes in the number of bicycle
 ### 3.2 Analyze the impact of weather on rental quantity
 As can be seen from the bar chart, snowy days have the greatest impact on bicycle rental volume, which is only 28% of the average value. The second is windy days, with rental volume of 56% of the average value. In addition, cloudy and rainy days also have lower rental volume than the average, while sunny and cloudy days have higher rental volume than the average.
 ![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/weather_avg.png)
+![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/8d43c3ce-263c-4713-83ce-6b617b9e48ab.png)
 
 We also visualized the weather for each day and the number of rentals for that day.
 ![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/weather_rent_num.png)
@@ -370,4 +371,16 @@ We group the data by month and calculate the total rental volume for this month,
 #### 3.5.1 Why not schedule by day?
 According to the following heat map, the peak hours of each station are in the same time period (morning peak, evening peak), so there is no need to schedule between different stations within a day.
 ![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/new_heatmap_station_time.png)
+
+The number changes for each site vary from month to month. **For example, in the heat map below, the number of leases for the sites in the red box in the heat map below was less than that of the sites in the blue box in January and February; however, it increased significantly in March and beyond, exceeding the number of sites in the blue box.** This illustrates the need to schedule between different sites each month.
+![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/heatmap_station_time_marked.png)
+
+#### 3.5.2 Optimal Scheduling Strategy
+We also calculated the proportion of returns to the total number of returns at each station (theoretically, the total number of returns should be equal to the total number of rentals), and then **subtracted the proportion of rentals to the total number of rentals at each station from the proportion of returns to the total number of returns at each station to find out whether the number of bicycles at each station is increasing or decreasing each month.** The figure below shows the data for the top 100 stations.
+![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/Difference.png)
+In the figure, the blue part means that the number of bicycles at this station is decreasing, the red part means that the number of bicycles is increasing, and the white part means that there is no change. **According to this figure, if the data in a blue grid is 0.1%, it means that the number of bicycles at this station has decreased by 0.1% of the amount put in this month.**
+
+We show the flow of bicycles in and out of each station on the map. **It can be seen that the stations with bicycle inflow are concentrated in the urban area, while the stations with bicycle outflow are concentrated in the suburbs (such as Columbia Heights, Woodley Park).**
+
+
 
