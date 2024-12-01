@@ -8,7 +8,7 @@ git clone https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-
 cd Analysis-of-the-distribution-pattern-of-shared-bicycles-main
 ```
 
-2. Please download the corresponding data on [Kaggle](https://www.kaggle.com/datasets/taweilo/capital-bikeshare-dataset-202005202408/data) and put the data in the [sources folder](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/tree/main/sources).
+2. Please download the corresponding data on **[Kaggle](https://www.kaggle.com/datasets/taweilo/capital-bikeshare-dataset-202005202408/data)** and put the data in the [sources folder](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/tree/main/sources).
 
 3. Run the [data_analysis.py](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/data_analysis.py) file, which will generate all the .csv files used for visualization and model training
 ```
@@ -25,6 +25,8 @@ python data_analysis.py
 **[data_analysis.ipynb](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/data_analysis.ipynb)**: This file is the original file used for data analysis. It integrates all the codes in this project, including the abandoned parts. It also contains some conclusions of this analysis. If you are interested, you can take a look at it.
 
 **[Member_new.ipynb](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/Member_new.ipynb)**: This file is a supplementary file for membership analysis, and its content has been integrated into [Visualization and Prediction Models.ipynb](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/Visualization%20and%20Prediction%20Models.ipynb).
+
+[sources](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/tree/main/sources): This folder is used to store the original data. You should download the original data on **[Kaggle](https://www.kaggle.com/datasets/taweilo/capital-bikeshare-dataset-202005202408/data)** and put it in this folder.
 
 
 
