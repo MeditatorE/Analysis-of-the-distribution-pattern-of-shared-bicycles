@@ -26,7 +26,7 @@ jupyter notebook
 
 7. Run the [Visualization and Prediction Models.ipynb](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/Visualization%20and%20Prediction%20Models.ipynb) file, which will visualize the analysis results and train a model that can be used to predict future bike rental volume.
 
-## File Description
+## 1. File Description
 **[data_analysis.py](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/data_analysis.py)**: This file integrates all the modules for data analysis. It will generate all the .csv files for model training and data visualization.
 
 **[Visualization and Prediction Models.ipynb](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/Visualization%20and%20Prediction%20Models.ipynb)**: This file integrates all the codes for data visualization and model training. Please run [data_analysis.py](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/data_analysis.py) before running this file.
@@ -115,4 +115,4 @@ xgboost==2.1.3
     └── weather.csv
 ```
 
-## 1. Dataset Overview
+## 2. Dataset Overview
