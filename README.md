@@ -242,4 +242,11 @@ Parameters information: [https://www.visualcrossing.com/resources/documentation/
 
 Data source : [https://www.visualcrossing.com/](https://www.visualcrossing.com/)
 
+## 3. Data analysis
+### 3.1 Analysis of rental quantity
+We analyzed the total rental data over the past four years and found that the data has seasonal cyclical changes and has been increasing over the past four years, so we Gaussian smoothed the data to calculate the growth rate:
+![](https://github.com/MeditatorE/Face-time-travel-machine/blob/main/Demo/QQ20210918-220741-HD.gif)
+![](https://github.com/MeditatorE/Face-time-travel-machine/blob/main/Demo/QQ20210918-220741-HD.gif)
+Finally, we found that the **annual growth rate was 12.5%**, which means that our first distribution strategy is that the total number of bicycles put into use should increase by 12.5% ​​each year.
+
 
