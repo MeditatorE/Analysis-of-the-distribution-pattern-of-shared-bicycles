@@ -128,7 +128,7 @@ The data volume of this project exceeds 10 million, about 16,000,000 data. We do
 
 **started_at**: start date and time
 
-ended_at: end date and time
+==ended_at==: end date and time
 
 start_station_name: starting station name
 
