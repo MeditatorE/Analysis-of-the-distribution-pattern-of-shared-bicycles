@@ -1,7 +1,7 @@
 # Analysis-of-the-distribution-pattern-of-shared-bicycles
 This is the final project for ECE143. The goal of this project is to analyze the existing (Washington, DC) bikeshare distribution patterns, identify characteristics associated with the distribution patterns, and attempt to predict optimal future deployment strategies.
 
-## 0.Quick Start
+## 0. Quick Start
 1. Clone this repo
 ```
 git clone https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles.git
@@ -114,3 +114,5 @@ xgboost==2.1.3
     ├── usage_frequency.csv
     └── weather.csv
 ```
+
+## 1. Dataset Overview
