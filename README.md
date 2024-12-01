@@ -299,5 +299,41 @@ features = [
 "severerisk" ]
 ```
 
+We need to evaluate the impact index of each feature on the weather. We use importance evaluation to quantify this indicator and use the **XGBoost** model to evaluate the importance of different features. The results are:
+```
+Feature: tempmax, Importance: 0.03388049080967903
+Feature: tempmin, Importance: 0.012917473912239075
+Feature: temp, Importance: 0.04539528116583824
+Feature: feelslikemax, Importance: 0.006318486295640469
+Feature: feelslikemin, Importance: 0.045982446521520615
+Feature: feelslike, Importance: 0.12540742754936218
+Feature: dew, Importance: 0.006908854469656944
+Feature: humidity, Importance: 0.006303189788013697
+Feature: precip, Importance: 0.017374780029058456
+Feature: precipprob, Importance: 0.0
+Feature: precipcover, Importance: 0.03359576687216759
+Feature: preciptype, Importance: 0.006663008593022823
+Feature: snow, Importance: 0.0011690628016367555
+Feature: snowdepth, Importance: 0.0022235941141843796
+Feature: windgust, Importance: 0.00928246509283781
+Feature: windspeed, Importance: 0.006737611256539822
+Feature: winddir, Importance: 0.0067607685923576355
+Feature: sealevelpressure, Importance: 0.006391626317054033
+Feature: cloudcover, Importance: 0.008458642289042473
+Feature: visibility, Importance: 0.014334036037325859
+Feature: solarradiation, Importance: 0.03705691918730736
+Feature: solarenergy, Importance: 0.03428182005882263
+Feature: uvindex, Importance: 0.3164701759815216
+Feature: severerisk, Importance: 0.2160860151052475
+```
+![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/Feature%20Importance%20XGBoost.png)
+
+The error of this model is:
+```
+MSE: 4627447.087644517
+RMSE: 2151.1501778454513
+```
+![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/Actual%20vs%20Predicted%20Rental%20Counts.png)
+
 
 
