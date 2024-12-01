@@ -34,24 +34,59 @@ python data_analysis.py
 
 **[result_picture](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/tree/main/result_picture)**: This file stores the visualization results of all data analysis. All files are in png image format.
 
-
-
-
-### Attention！！！
-If you need to upload new code, please synchronize the local repository first, add changes, and then send a pull request. Otherwise, the latest progress may be lost. **Please pay attention!!!**
-
-**If you are using GitHud for the first time, [read this](https://docs.github.com/en).**
-
-### The directory structure is as follows：
+**The specific structure of all files is as follows:**
 ```
 /main/
+├── Member_new.ipynb
+├── Visualization and Prediction Models.ipynb
+├── csv file
+│   ├── Difference.csv
+│   ├── df_date_Clear.csv
+│   ├── df_date_Cloudy.csv
+│   ├── df_date_Partially_cloudy.csv
+│   ├── df_date_Rain.csv
+│   ├── df_date_Snow.csv
+│   ├── df_date_Wind.csv
+│   ├── df_date_rent_num.csv
+│   ├── df_date_weather_num.csv
+│   ├── df_member_casual.csv
+│   ├── df_member_start.csv
+│   ├── df_month_time.csv
+│   ├── df_pro.csv
+│   ├── df_station_time.csv
+│   ├── start_percentage.csv
+│   └── stats_with_type.csv
 ├── data_analysis.ipynb
-├── sources
-│   ├── data1.csv
-│   ├── data2.csv
-│   └── ...
-├── YOUR FOLDER
-│   ├── YOUR_CODE.ipynb
-│   └── ...
-└── ...
+├── data_analysis.py
+├── html
+│   ├── my_map_end.html
+│   ├── my_map_start.html
+│   ├── washington_map_in_out.html
+│   ├── washington_map_member.html
+│   └── washington_map_type.html
+├── result_picture
+│   ├── Actual vs Predicted Rental Counts.png
+│   ├── Difference.png
+│   ├── Feature Importance XGBoost.png
+│   ├── Percentage of rentals.png
+│   ├── Prophet_result.png
+│   ├── Ride_duration.png
+│   ├── Station_Type_rent.png
+│   ├── full Difference.png
+│   ├── full Percentage of rentals.png
+│   ├── heatmap_rental_quantities.png
+│   ├── heatmap_station_time.png
+│   ├── member_barchart.png
+│   ├── member_station.png
+│   ├── new_heatmap_station_time.png
+│   ├── total.png
+│   ├── total_gaussian.png
+│   ├── weather_avg.png
+│   └── weather_rent_num.png
+└── sources
+    ├── daily_rent_detail.csv
+    ├── station_list.csv
+    ├── stations.csv
+    ├── usage_frequency.csv
+    └── weather.csv
 ```
