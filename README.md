@@ -7,7 +7,10 @@ This is the final project for ECE143. The goal of this project is to analyze the
 git clone https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles.git
 cd Analysis-of-the-distribution-pattern-of-shared-bicycles-main
 ```
+
 2. Please download the corresponding data on [Kaggle](https://www.kaggle.com/datasets/taweilo/capital-bikeshare-dataset-202005202408/data) and put the data in the [sources folder](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/tree/main/sources).
+
+3. Run the [data_analysis.py] file, which will generate all the .csv files used for visualization and model training
 
 ### Attention！！！
 If you need to upload new code, please synchronize the local repository first, add changes, and then send a pull request. Otherwise, the latest progress may be lost. **Please pay attention!!!**
