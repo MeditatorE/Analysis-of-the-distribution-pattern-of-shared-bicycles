@@ -118,15 +118,15 @@ xgboost==2.1.3
 ## 2. Dataset Overview
 The data volume of this project exceeds 10 million, about 16,000,000 data. We downloaded this data from **[Kaggle](https://www.kaggle.com/datasets/taweilo/capital-bikeshare-dataset-202005202408/data)**, including:
 
-1. File information: 4 files /duration 2020/05~2024/08
+**1. File information:** 4 files /duration 2020/05~2024/08
 
 - Daily rent data
 
-ride_id: ride id
+**ride_id**: ride id
 
-rideable_type: ride type. I.e. docked_bike, electric_bike, classic_bike
+**rideable_type**: ride type. I.e. docked_bike, electric_bike, classic_bike
 
-started_at: start date and time
+**started_at**: start date and time
 
 ended_at: end date and time
 
@@ -263,7 +263,7 @@ We also visualized the weather for each day and the number of rentals for that d
 
 
 #### 3.2.1 Quantifying the impact of weather on rental numbers
-To quantify the impact of weather on rental volume, we use significance analysis to evaluate the impact
+To quantify the impact of weather on rental volume, we use **significance analysis** to evaluate the impact
 ```
 # One-way ANOVA
 f_stat, p_value = f_oneway(category_partially_cloudy, category_rain, category_clear_day, category_cloudy, category_snow, category_wind)
@@ -304,7 +304,7 @@ features = [
 ```
 
 
-We need to evaluate the impact index of each feature on the weather. We use importance evaluation to quantify this indicator and use the **XGBoost** model to evaluate the importance of different features. The results are:
+We need to evaluate the impact index of each feature on the weather. We use **importance evaluation** to quantify this indicator and use the **XGBoost** model to evaluate the importance of different features. The results are:
 ```
 # Initialize the XGBoost regressor
 xgb_model = XGBRegressor(
@@ -348,9 +348,8 @@ The error of this model is:
 MSE: 4627447.087644517
 RMSE: 2151.1501778454513
 ```
-This result shows that **the fit of our model can reach 84.3%**, the MAE is 1458, and the average rental volume for all days is 10156, so the **accuracy of our model can exceed 85%**.
-
 ![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/Actual%20vs%20Predicted%20Rental%20Counts.png)
+
 
 ### 3.3 Forecasting future rental volumes
 After getting the importance of each feature, we try to use seasonal and weather data to predict future bicycle usage. Here we use the **Prophet** model
@@ -358,7 +357,7 @@ After getting the importance of each feature, we try to use seasonal and weather
 **Why use Prophet model?**
 The Prophet model is a time series forecasting model designed for processing data with obvious seasonal components and trend changes. Our data is a seasonal periodic change data, which is very suitable for this model.
 
-We then add each important weather feature as a regression variable for Prophet training. The training results are:
+We then **add each important weather feature** as a regression variable for Prophet training. The training results are:
 ```
 # Define the Prophet model
 model = Prophet()
@@ -379,6 +378,8 @@ Mean Squared Error (MSE): 3907222.9902083008
 Mean Absolute Error (MAE): 1458.3266245041264
 R² Score: 0.8432569983242107
 ```
+This result shows that **the fit of our model can reach 84.3%**, the MAE is 1458, and the average rental volume for all days is 10156, so the **accuracy of our model can exceed 85%**.
+
 ![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/Prophet_result.png)
 
 
@@ -469,7 +470,10 @@ We have provided an interactive map for this section. Please download [washingto
 **From this figure, we can see that the station type has little effect on the number of car rentals. It is not necessary to use the station category as a feature to predict the number of car rentals.**
 
 ## 4. Conclusion
-This project has fully analyzed the existing data and achieved prediction of future rental volume by training the Prophe model with an accuracy of over 85%. Combined with our other analyses, we have given the corresponding **optimal distribution strategy** (**3.4.1**), **optimal scheduling strategy** (**3.5.3**), and **push strategy for non-member users** (**3.6.2 & 3.6.3 & 3.6.4**).
+This project has fully analyzed the existing data and achieved prediction of future rental volume by training the Prophe model with an accuracy of over **85%** (**3.3**). Combined with our other analyses, we have given the corresponding **optimal distribution strategy** (**3.4.1**), **optimal scheduling strategy** (**3.5.3**), and **push strategy for non-member users** (**3.6.2 & 3.6.3 & 3.6.4**).
+
+## Reference
+Dataset: [https://www.kaggle.com/datasets/taweilo/capital-bikeshare-dataset-202005202408/data](https://www.kaggle.com/datasets/taweilo/capital-bikeshare-dataset-202005202408/data)
 
 
 
