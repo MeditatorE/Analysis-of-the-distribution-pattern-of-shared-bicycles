@@ -10,7 +10,13 @@ cd Analysis-of-the-distribution-pattern-of-shared-bicycles-main
 
 2. Please download the corresponding data on [Kaggle](https://www.kaggle.com/datasets/taweilo/capital-bikeshare-dataset-202005202408/data) and put the data in the [sources folder](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/tree/main/sources).
 
-3. Run the [data_analysis.py] file, which will generate all the .csv files used for visualization and model training
+3. Run the [data_analysis.py](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/data_analysis.py) file, which will generate all the .csv files used for visualization and model training
+```
+python data_analysis.py
+```
+
+4. Run the Visualization and Prediction Models.ipynb file, which will visualize the analysis results and train a model that can be used to predict future bike rental volume.
+   
 
 ### Attention！！！
 If you need to upload new code, please synchronize the local repository first, add changes, and then send a pull request. Otherwise, the latest progress may be lost. **Please pay attention!!!**
