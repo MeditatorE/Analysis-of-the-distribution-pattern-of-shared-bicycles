@@ -340,5 +340,29 @@ RMSE: 2151.1501778454513
 ```
 ![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/Actual%20vs%20Predicted%20Rental%20Counts.png)
 
+### 3.3 Forecasting future rental volumes
+After getting the importance of each feature, we try to use seasonal and weather data to predict future bicycle usage. Here we use the **Prophet** model
+
+**Why use Prophet model?**
+The Prophet model is a time series forecasting model designed for processing data with obvious seasonal components and trend changes. Our data is a seasonal periodic change data, which is very suitable for this model.
+
+We then add each important weather feature as a regression variable for Prophet training. The training results are:
+```
+Mean Squared Error (MSE): 3907222.9902083008
+Mean Absolute Error (MAE): 1458.3266245041264
+R² Score: 0.8432569983242107
+```
+![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/Prophet_result.png)
+
+
+### 3.4 The optimal bicycle distribution problem
+We can already predict the daily bicycle usage based on the weather (this data can be known in advance because there is a weather forecast), so how do we allocate bicycles? (Optimal distribution problem)
+
+We group the data by month and calculate the total rental volume for this month, and then calculate the proportion of each site to the total rental volume. The results are as follows (Since the amount of data is too huge, we choose the first 100 stations for display)
+![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/Percentage%20of%20rentals.png)
+
+#### 3.4.1 Optimal Distribution Strategy
+**Then, based on our predicted data and the rental volume share of each station each month, we can calculate the recommended number of bicycles to be deployed at any station on any given day, that is, the optimal distribution strategy.**
+
 
 
