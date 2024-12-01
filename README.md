@@ -122,7 +122,7 @@ The data volume of this project exceeds 10 million, about 16,000,000 data. We do
 
 - Daily rent data
 
-**ride_id**: ride id
+- `ride_id`: ride id
 
 **rideable_type**: ride type. I.e. docked_bike, electric_bike, classic_bike
 
