@@ -244,9 +244,21 @@ Data source : [https://www.visualcrossing.com/](https://www.visualcrossing.com/)
 
 ## 3. Data analysis
 ### 3.1 Analysis of rental quantity
-We analyzed the total rental data over the past four years and found that the data has seasonal cyclical changes and has been increasing over the past four years, so we Gaussian smoothed the data to calculate the growth rate:
+We analyzed the total rental data over the past four years and found that the data has seasonal cyclical changes and has been increasing over the past four years, so we Gaussian smoothed the data to calculate the growth rate. Finally, we found that the **annual growth rate was 12.5%**, which means that our first distribution strategy is that the total number of bicycles put into use should increase by 12.5% ​​each year.
 ![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/total.png)
 ![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/total_gaussian.png)
-Finally, we found that the **annual growth rate was 12.5%**, which means that our first distribution strategy is that the total number of bicycles put into use should increase by 12.5% ​​each year.
+
+
+We then use heat maps to represent the periodic changes in the number of bicycle rentals over the course of a year and day. We aggregate rental records that fall within the same half-hour interval each month. It can be seen that during the year, the rental volume reaches the peak in summer and the trough in winter, **further indicating that the rental volume is greatly affected by the season**; in the daily cycle, the rental volume increases significantly during the morning peak and evening peak hours. Especially the evening peak is the most obvious peak period.
+![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/heatmap_rental_quantities.png)
+
+### 3.2 Analyze the impact of weather on rental quantity
+As can be seen from the bar chart, snowy days have the greatest impact on bicycle rental volume, which is only 28% of the average value. The second is windy days, with rental volume of 56% of the average value. In addition, cloudy and rainy days also have lower rental volume than the average, while sunny and cloudy days have higher rental volume than the average.
+![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/weather_avg.png)
+
+We also visualized the weather for each day and the number of rentals for that day.
+![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/weather_rent_num.png)
+
+
 
 
