@@ -7,15 +7,19 @@ This is the final project for ECE143. The goal of this project is to analyze the
 git clone https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles.git
 cd Analysis-of-the-distribution-pattern-of-shared-bicycles-main
 ```
+2. Install dependency packages
+```
+pip install -r requirements.txt
+```
 
-2. Please download the corresponding data on **[Kaggle](https://www.kaggle.com/datasets/taweilo/capital-bikeshare-dataset-202005202408/data)** and put the data in the [sources folder](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/tree/main/sources).
+3. Please download the corresponding data on **[Kaggle](https://www.kaggle.com/datasets/taweilo/capital-bikeshare-dataset-202005202408/data)** and put the data in the [sources folder](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/tree/main/sources).
 
-3. Run the [data_analysis.py](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/data_analysis.py) file, which will generate all the .csv files used for visualization and model training
+4. Run the [data_analysis.py](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/data_analysis.py) file, which will generate all the .csv files used for visualization and model training
 ```
 python data_analysis.py
 ```
 
-4. Run the [Visualization and Prediction Models.ipynb](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/Visualization%20and%20Prediction%20Models.ipynb) file, which will visualize the analysis results and train a model that can be used to predict future bike rental volume.
+5. Run the [Visualization and Prediction Models.ipynb](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/Visualization%20and%20Prediction%20Models.ipynb) file, which will visualize the analysis results and train a model that can be used to predict future bike rental volume.
 
 ## File Description
 **[data_analysis.py](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/data_analysis.py)**: This file integrates all the modules for data analysis. It will generate all the .csv files for model training and data visualization.
