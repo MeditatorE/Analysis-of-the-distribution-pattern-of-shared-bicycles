@@ -19,6 +19,7 @@ python data_analysis.py
 
 ## File Description
 **[data_analysis.py](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/data_analysis.py)**: This file integrates all the modules for data analysis. It will generate all the .csv files for model training and data visualization.
+
 **[Visualization and Prediction Models.ipynb](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/Visualization%20and%20Prediction%20Models.ipynb)**: This file integrates all the codes for data visualization and model training. Please run [data_analysis.py](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/data_analysis.py) before running this file.
 
 
