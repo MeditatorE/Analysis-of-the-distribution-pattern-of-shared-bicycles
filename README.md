@@ -426,7 +426,7 @@ We have provided an interactive map for this section. Please download [washingto
 
 **For users who often ride at stations with a large number of members, targeted advertising can be placed to attract them to join. For stations near tourist attractions where the majority of users are non-members, other plans can be adopted, such as short-term membership plans and recommended routes to tourist attractions.**
 
-### Summary
+#### 3.6.4 Summary
 **In summary, through the analysis of member and non-member behaviors, car rental companies can target potential member users from different angles such as riding time and riding stations to gain more profits and visibility.**
 
 ### 3.7 Station Category Analysis
@@ -443,6 +443,10 @@ We have provided an interactive map for this section. Please download [washingto
 **Conclusion:** 
 
 **From this figure, we can see that the station type has little effect on the number of car rentals. It is not necessary to use the station category as a feature to predict the number of car rentals.**
+
+## 4. Conclusion
+This project has fully analyzed the existing data and achieved prediction of future rental volume by training the Prophe model with an accuracy of over 85%. Combined with our other analyses, we have given the corresponding **optimal distribution strategy** (**3.4.1**), **optimal scheduling strategy** (**3.5.3**), and **push strategy for non-member users** (**3.6.2 & 3.6.3 & 3.6.4**).
+
 
 
 
