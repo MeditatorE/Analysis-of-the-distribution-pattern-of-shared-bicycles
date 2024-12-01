@@ -116,3 +116,77 @@ xgboost==2.1.3
 ```
 
 ## 2. Dataset Overview
+The data volume of this project exceeds 10 million, about 16,000,000 data. We downloaded this data from **[Kaggle](https://www.kaggle.com/datasets/taweilo/capital-bikeshare-dataset-202005202408/data)**, including:
+
+1. File information: 4 files /duration 2020/05~2024/08
+
+- Daily rent data
+
+ride_id: ride id
+rideable_type: ride type. I.e. docked_bike, electric_bike, classic_bike
+started_at: start date and time
+ended_at: end date and time
+start_station_name: starting station name
+start_station_id: starting station id
+end_station_name: ending station name
+end_station_id: ending station id
+start_lat: start latitude
+start_lng: start longitude
+end_lat: end latitude
+end_lng: end longitude
+member_casual: Indicates whether user was a "registered" member (Annual Member, 30-Day Member or Day Key Member) or a "casual" rider (Single Trip, 24-Hour Pass, 3-Day Pass or 5-Day Pass). I.e. casual, member
+Data source: [https://capitalbikeshare.com/system-data](https://capitalbikeshare.com/system-data)
+
+- Station list
+
+station_id: station id
+station_name: station name
+Data source: organized from Daily rent data
+
+- Usage frequency
+
+date: date
+station_name: station name
+pickup_counts: daily pickup of the station
+dropoff_counts: daily dropoff of the station
+Data source: organized from Daily rent data
+
+- Weather
+
+name: location
+datetime: date
+tempmax: maximum temperature at the location.
+tempmin: minimum temperature at the location.
+temp: temperature at the location. Daily values are average values (mean) for the day.
+feelslikemax: maximum feels like temperature at the location.
+feelslikemin: minimum feels like temperature at the location.
+feelslike: what the temperature feels like accounting for heat index or wind chill. Daily values are average values (mean) for the day.
+dew: dew point temperature
+humidity: relative humidity in %
+precip: the amount of liquid precipitation that fell or is predicted to fall in the period.
+precipprob: the likelihood of measurable precipitation ranging from 0% to 100%
+precipcover: the proportion of hours where there was non-zero precipitation
+preciptype: an array indicating the type(s) of precipitation expected or that occurred.
+snow: the amount of snow that fell or is predicted to fall
+snowdepth: the depth of snow on the ground
+windgust: instantaneous wind speed at a location
+windspeed: the sustained wind speed measured as the average windspeed that occurs during the preceding one to two minutes. Daily values are the maximum hourly value for the day.
+winddir: direction from which the wind is blowing
+sealevelpressure: the sea level atmospheric or barometric pressure in millibars
+cloudcover: the sea level atmospheric or barometric pressure in millibars
+visibility: distance at which distant objects are visible
+solarradiation: (W/m2) the solar radiation power at the instantaneous moment of the observation (or forecast prediction)
+solarenergy: (MJ /m2 ) indicates the total energy from the sun that builds up over a day.
+uvindex: a value between 0 and 10 indicating the level of ultra violet (UV) exposure for that day.
+severerisk: a value between 0 and 100 representing the risk of convective storms
+sunrise: the formatted time of the sunrise
+sunset: the formatted time of the sunset
+moonphase: represents the fractional portion through the current moon lunation cycle ranging from 0 (the new moon) to 0.5 (the full moon) and back to 1 (the next new moon)
+conditions: textual representation of the weather conditions.
+description: longer text descriptions suitable for displaying in weather displays
+icon: a fixed, machine readable summary that can be used to display an icon
+stations: the weather stations used when collecting a historical observation record
+Parameters information: https://www.visualcrossing.com/resources/documentation/weather-api/timeline-weather-api/
+Data source : [https://www.visualcrossing.com/](https://www.visualcrossing.com/)
+
+
