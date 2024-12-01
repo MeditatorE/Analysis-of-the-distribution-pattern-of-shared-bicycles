@@ -338,6 +338,8 @@ The error of this model is:
 MSE: 4627447.087644517
 RMSE: 2151.1501778454513
 ```
+This result shows that **the fit of our model can reach 84.3%**, the MAE is 1458, and the average rental volume for all days is 10156, so the **accuracy of our model can exceed 85%**.
+
 ![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/Actual%20vs%20Predicted%20Rental%20Counts.png)
 
 ### 3.3 Forecasting future rental volumes
@@ -364,5 +366,8 @@ We group the data by month and calculate the total rental volume for this month,
 #### 3.4.1 Optimal Distribution Strategy
 **Then, based on our predicted data and the rental volume share of each station each month, we can calculate the recommended number of bicycles to be deployed at any station on any given day, that is, the optimal distribution strategy.**
 
-
+### 3.5 The best scheduling strategy for each month
+#### 3.5.1 Why not schedule by day?
+According to the following heat map, the peak hours of each station are in the same time period (morning peak, evening peak), so there is no need to schedule between different stations within a day.
+![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/new_heatmap_station_time.png)
 
