@@ -385,5 +385,19 @@ We show the flow of bicycles in and out of each station on the map. **It can be 
 We have provided an interactive map for this section. Please download [washington_map_in_out.html](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/html/washington_map_in_out.html) and open it in your browser.
 ![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/washington_map_in_out.png)
 
+#### 3.5.3 Conclusion
+**So we get the best scheduling strategy: before the beginning of each month, the bicycles in the red station should be transferred to the blue station according to the predicted increase/decrease percentage of the month.**
+
+### 3.6 Member/Non-member analysis
+#### 3.6.1 Membership ratio analysis
+In our data, each rental record also includes whether the user is a member. We analyze the behavioral differences between members and non-members to better help bicycle rental companies formulate marketing strategies, such as tapping into potential member users, optimizing member benefits, and personalized push messages.
+
+Among all rental records, **60% are used by members and 40% are non-members.** Although members account for the majority, there are still a considerable number of non-members. **Our goal is to analyze the behavior patterns of members and find as many users as possible who are likely to become members among non-members.** Companies can push more discounts to these people to attract them to become members in order to gain greater profits.
+![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/member_barchart.png)
+
+#### 3.6.2 User behavior analysis
+We made statistics on the riding time of each record and drew a histogram. Most rides are under 20 minutes. There are significantly more members than non-members who ride for less than 30 minutes; and more non-members for more than 30 minutes.
+
+
 
 
