@@ -15,7 +15,7 @@ cd Analysis-of-the-distribution-pattern-of-shared-bicycles-main
 python data_analysis.py
 ```
 
-4. Run the Visualization and Prediction Models.ipynb file, which will visualize the analysis results and train a model that can be used to predict future bike rental volume.
+4. Run the [Visualization and Prediction Models.ipynb](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/Visualization%20and%20Prediction%20Models.ipynb) file, which will visualize the analysis results and train a model that can be used to predict future bike rental volume.
    
 
 ### Attention！！！
