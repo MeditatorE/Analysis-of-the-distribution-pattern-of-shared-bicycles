@@ -259,7 +259,7 @@ As can be seen from the bar chart, snowy days have the greatest impact on bicycl
 We also visualized the weather for each day and the number of rentals for that day.
 ![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/weather_rent_num.png)
 
-#### Quantifying the impact of weather on rental numbers
+#### 3.2.1 Quantifying the impact of weather on rental numbers
 To quantify the impact of weather on rental volume, we use significance analysis to evaluate the impact
 ```
 # One-way ANOVA
@@ -288,6 +288,16 @@ snow                F-statistic: 87.119, P-value: 0.000
 wind                F-statistic: 2.299, P-value: 0.134
 ```
 
+#### 3.2.2 Quantifying the importance of the impact of different weather features on leasing volumes
+Now we know that the daily bicycle rental volume is affected by season (3.1 Conclusion) and weather (3.2 Conclusion), and we have weather data for each of the past four years. There are 24 features in total, namely
+```
+features = [
+"tempmax", "tempmin", "temp", "feelslikemax", "feelslikemin", "feelslike",
+"dew", "humidity", "precip", "precipprob", "precipcover", "preciptype",
+"snow", "snowdepth", "windgust", "windspeed", "winddir", "sealevelpressure",
+"cloudcover", "visibility", "solarradiation", "solarenergy", "uvindex",
+"severerisk" ]
+```
 
 
 
