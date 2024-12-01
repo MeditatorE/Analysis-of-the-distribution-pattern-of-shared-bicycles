@@ -259,6 +259,35 @@ As can be seen from the bar chart, snowy days have the greatest impact on bicycl
 We also visualized the weather for each day and the number of rentals for that day.
 ![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/weather_rent_num.png)
 
+#### Quantifying the impact of weather on rental numbers
+To quantify the impact of weather on rental volume, we use significance analysis to evaluate the impact
+```
+# One-way ANOVA
+f_stat, p_value = f_oneway(category_partially_cloudy, category_rain, category_clear_day, category_cloudy, category_snow, category_wind)
+print(f"F-statistic: {f_stat:.3f}, P-value: {p_value:.3f}")
+
+# Interpretation of results
+alpha = 0.05
+if p_value < alpha:
+    print("Differences between categories are statistically significant (reject the null hypothesis)")
+else:
+    print("The difference between different categories is not significant (the null hypothesis cannot be rejected)")
+```
+```
+F-statistic: 26.840, P-value: 0.000
+Differences between categories are statistically significant (reject the null hypothesis)
+```
+**The conclusion is that weather has an impact on travel, and the F-statistic is 26, which means that the variance between groups is 26 times the variance within the group. This shows that the impact of weather on travel is relatively significant.**
+
+In addition, we also counted the impact of different weather conditions on travel. The significance of the impact of different weather conditions on rental volume is as follows:
+```
+partially_cloudy    F-statistic: 0.560, P-value: 0.454
+rain                F-statistic: 4.024, P-value: 0.045
+cloudy              F-statistic: 10.340, P-value: 0.002
+snow                F-statistic: 87.119, P-value: 0.000
+wind                F-statistic: 2.299, P-value: 0.134
+```
+
 
 
 
