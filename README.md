@@ -120,7 +120,7 @@ The data volume of this project exceeds 10 million, about 16,000,000 data. We do
 
 **File information:** 4 files /duration 2020/05~2024/08
 
-- Daily rent data
+**Daily rent data**
 
 - `ride_id`: ride id
 
@@ -150,7 +150,7 @@ The data volume of this project exceeds 10 million, about 16,000,000 data. We do
 
 **Data source:** [https://capitalbikeshare.com/system-data](https://capitalbikeshare.com/system-data)
 
-- Station list
+**Station list**
 
 - `station_id`: station id
 
@@ -158,7 +158,7 @@ The data volume of this project exceeds 10 million, about 16,000,000 data. We do
 
 **Data source:** organized from Daily rent data
 
-- Usage frequency
+**Usage frequency**
 
 - `date`: date
 
@@ -170,7 +170,7 @@ The data volume of this project exceeds 10 million, about 16,000,000 data. We do
 
 **Data source:** organized from Daily rent data
 
-- Weather
+**Weather**
 
 - `name`: location
 
