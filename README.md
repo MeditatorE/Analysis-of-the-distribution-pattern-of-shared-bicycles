@@ -355,6 +355,7 @@ RMSE: 2151.1501778454513
 After getting the importance of each feature, we try to use seasonal and weather data to predict future bicycle usage. Here we use the **Prophet** model
 
 **Why use Prophet model?**
+
 The Prophet model is a time series forecasting model designed for processing data with obvious seasonal components and trend changes. Our data is a seasonal periodic change data, which is very suitable for this model.
 
 We then **add each important weather feature** as a regression variable for Prophet training. The training results are:
@@ -394,6 +395,7 @@ We group the data by month and calculate the total rental volume for this month,
 
 ### 3.5 The best scheduling strategy for each month
 #### 3.5.1 Why not schedule by day?
+
 According to the following heat map, the peak hours of each station are in the same time period (morning peak, evening peak), so there is no need to schedule between different stations within a day.
 ![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/new_heatmap_station_time.png)
 
