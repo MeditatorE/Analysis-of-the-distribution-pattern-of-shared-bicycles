@@ -24,7 +24,7 @@ python data_analysis.py
 
 **[data_analysis.ipynb](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/data_analysis.ipynb)**: This file is the original file used for data analysis. It integrates all the codes in this project, including the abandoned parts. It also contains some conclusions of this analysis. If you are interested, you can take a look at it.
 
-
+**[Member_new.ipynb](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/Member_new.ipynb)**: This file is a supplementary file for membership analysis, and its content has been integrated into [Visualization and Prediction Models.ipynb](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/Visualization%20and%20Prediction%20Models.ipynb).
 
 
 
