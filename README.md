@@ -43,6 +43,21 @@ jupyter notebook
 
 **[result_picture](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/tree/main/result_picture)**: This file stores the visualization results of all data analysis. All files are in png image format.
 
+**All the dependent modules of this project are as follows:**
+```
+branca==0.8.0
+folium==0.18.0
+matplotlib==3.6.2
+numpy==1.23.5
+pandas==1.5.3
+prophet==1.1.6
+scikit_learn==1.3.2
+scipy==1.9.1
+seaborn==0.13.2
+tqdm==4.64.1
+xgboost==2.1.3
+```
+
 **The specific structure of all files is as follows:**
 ```
 /main/
