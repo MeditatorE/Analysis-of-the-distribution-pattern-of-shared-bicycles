@@ -380,7 +380,10 @@ We also calculated the proportion of returns to the total number of returns at e
 ![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/Difference.png)
 In the figure, the blue part means that the number of bicycles at this station is decreasing, the red part means that the number of bicycles is increasing, and the white part means that there is no change. **According to this figure, if the data in a blue grid is 0.1%, it means that the number of bicycles at this station has decreased by 0.1% of the amount put in this month.**
 
-We show the flow of bicycles in and out of each station on the map. **It can be seen that the stations with bicycle inflow are concentrated in the urban area, while the stations with bicycle outflow are concentrated in the suburbs (such as Columbia Heights, Woodley Park).**
+We show the flow of bicycles in and out of each station on the map. **It can be seen that the stations with bicycle inflow are concentrated in the urban area, while the stations with bicycle outflow are concentrated in the suburbs (such as Columbia Heights, Woodley Park).** 
+
+We have provided an interactive map for this section. Please download [washington_map_in_out.html](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/html/washington_map_in_out.html) and open it in your browser.
+![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/washington_map_in_out.png)
 
 
 
