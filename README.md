@@ -459,7 +459,7 @@ We have provided an interactive map for this section. Please download [washingto
 ### 3.7 Station Category Analysis
 We also artificially divided the stations into three categories: work, entertainment, and life based on the facilities around the stations. The plan is to find out the possible influencing factors of the station type stack usage. The bar chart below shows that the usage of the three types of stations is not much different, among which work is the most, and life is slightly lower than the other two. **It can be seen that the number of the three types of stations is not much different.**
 
-![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/Station_Type_rent.png
+![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/Station_Type_rent.png)
 
 Draw three types of stations on the map:
 
