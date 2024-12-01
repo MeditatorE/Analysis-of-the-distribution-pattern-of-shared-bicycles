@@ -417,6 +417,9 @@ Percentage of such stations among all stations: 37.03%
 ```
 
 On this map, we can see more intuitively that most of the sites have more members (orange), while a few sites with more non-members (blue) are concentrated around famous attractions in Washington DC, such as the Lincoln Memorial, which has the largest number of non-members. **It can be inferred that these non-members may include a large number of tourists from other places.**
+
+We have provided an interactive map for this section. Please download [washington_map_member.html](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/html/washington_map_member.html) and open it in your browser.
+
 ![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/washington_map_member.png)
 
 **Conclusion:** 
@@ -426,7 +429,20 @@ On this map, we can see more intuitively that most of the sites have more member
 ### Summary
 **In summary, through the analysis of member and non-member behaviors, car rental companies can target potential member users from different angles such as riding time and riding stations to gain more profits and visibility.**
 
+### 3.7 Station Category Analysis
+We also artificially divided the stations into three categories: work, entertainment, and life based on the facilities around the stations. The plan is to find out the possible influencing factors of the station type stack usage. The bar chart below shows that the usage of the three types of stations is not much different, among which work is the most, and life is slightly lower than the other two. **It can be seen that the number of the three types of stations is not much different.**
 
+![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/Station_Type_rent.png
+
+Draw three types of stations on the map:
+
+We have provided an interactive map for this section. Please download [washington_map_type.html](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/html/washington_map_type.html) and open it in your browser.
+
+![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/washington_map_type.png)
+
+**Conclusion:** 
+
+**From this figure, we can see that the station type has little effect on the number of car rentals. It is not necessary to use the station category as a feature to predict the number of car rentals.**
 
 
 
