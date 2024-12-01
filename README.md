@@ -406,4 +406,28 @@ We made statistics on the riding time of each record and drew a histogram. Most 
 
 **But there is still a large number of short-distance cyclists who are not members. For non-member users who often ride short distances, they should be attracted to become members. For example, advertisements can be placed at morning and evening peak hours at office area sites. Although the proportion is small, there are still a certain number of long-distance cyclists. Different strategies can be used, such as "you can enjoy discounts on membership fees if you ride for more than one hour" to attract users to gradually convert from a long-distance ride to a member.**
 
+#### 3.6.3 Analysis of the number of members at different stations
+This graph shows the number of members and non-members by starting site (sorted by the number of members in descending order, taking the top 100 sites). As you can see from the graph, most sites have more members. But there are also some sites that have more non-members.
+
+![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/member_station.png)
+
+We further counted the stations with more non-member riders, accounting for **37.03%** of all stations
+```
+Percentage of such stations among all stations: 37.03%
+```
+
+On this map, we can see more intuitively that most of the sites have more members (orange), while a few sites with more non-members (blue) are concentrated around famous attractions in Washington DC, such as the Lincoln Memorial, which has the largest number of non-members. **It can be inferred that these non-members may include a large number of tourists from other places.**
+![](https://github.com/MeditatorE/Analysis-of-the-distribution-pattern-of-shared-bicycles/blob/main/result_picture/washington_map_member.png)
+
+**Conclusion:** 
+
+**For users who often ride at stations with a large number of members, targeted advertising can be placed to attract them to join. For stations near tourist attractions where the majority of users are non-members, other plans can be adopted, such as short-term membership plans and recommended routes to tourist attractions.**
+
+### Summary
+**In summary, through the analysis of member and non-member behaviors, car rental companies can target potential member users from different angles such as riding time and riding stations to gain more profits and visibility.**
+
+
+
+
+
 
