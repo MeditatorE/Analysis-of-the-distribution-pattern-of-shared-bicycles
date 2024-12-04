@@ -86,17 +86,17 @@ df_rent_only_time['month'] = df_rent_only_time['started_at'].dt.month
 df_rent_only_time['started_at'] = df_rent_only_time['started_at'].dt.time
 df_rent_only_time['ended_at'] = df_rent_only_time['ended_at'].dt.time
 
-# 定义一个函数，将时间归类到半小时间隔
+# Define a function to group time into half-hour intervals
 def classify_time_to_half_hour(time_obj):
     hour = time_obj.hour
     minute = time_obj.minute
-    # 归类分钟到最近的半小时
+    # Count minutes to the nearest half hour
     if minute < 30:
         return f"{hour:02d}:00 - {hour:02d}:30"
     else:
         return f"{hour:02d}:30 - {hour+1:02d}:00"
 
-# 应用函数进行分类
+# Applying functions for classification
 df_rent_only_time['started_at_half_hour'] = df_rent_only_time['started_at'].apply(classify_time_to_half_hour)
 df_rent_only_time['ended_at_half_hour'] = df_rent_only_time['ended_at'].apply(classify_time_to_half_hour)
 
@@ -138,9 +138,9 @@ df_date_weather_num = df_date_weather_num.drop(columns='index')
 df_date_weather_num.to_csv('df_date_weather_num.csv', index=False)
 
 df_pro = df_date_weather_num.copy()
-# 确保日期为 datetime 格式
+# Make sure the date is in datetime format
 df_pro['datetime'] = pd.to_datetime(df_pro['datetime'])
-# 重命名日期列和目标变量列
+# Rename the date column and target variable column
 df_pro.rename(columns={'datetime': 'ds', 'rental quantity': 'y'}, inplace=True)
 df_pro.to_csv('df_pro.csv', index=False)
 
@@ -164,14 +164,14 @@ new_df_start_station_time = df_station_time.groupby('month', as_index=False).sum
 new_df_start_station_time = new_df_start_station_time.set_index('month')
 
 start_monthly_totals = new_df_start_station_time.sum(axis=1)
-# 计算每个站点的占比
+# Calculate the proportion of each site
 df_start_percentage = new_df_start_station_time.div(start_monthly_totals, axis=0)
 df_start_percentage = df_start_percentage*100
 
 df_start_percentage.to_csv('start_percentage.csv')
 
 end_monthly_totals = new_df_end_station_time.sum(axis=1)
-# 计算每个站点的占比
+# Calculate the proportion of each site
 df_end_percentage = new_df_end_station_time.div(end_monthly_totals, axis=0)
 df_end_percentage = df_end_percentage*100
 
@@ -221,10 +221,10 @@ stats = stats.rename(columns={
 stations = pd.read_csv('sources/stations.csv')
 stats_with_type = pd.merge(
     stats,
-    stations[['stations', 'type', 'public transportation']],  # 只选择相关的列
-    left_on="station_name",  # 按站点名称匹配
-    right_on="stations",  # 与 stations.csv 中的站点名称列匹配
-    how="left"  # 左连接，保留 stats 中所有行
+    stations[['stations', 'type', 'public transportation']],  # Select only relevant columns
+    left_on="station_name",  # Match by site name
+    right_on="stations",  # Matches the station name column in stations.csv
+    how="left"  # Left join, keep all rows in stats
 )
 stats_with_type = stats_with_type.drop(columns=["stations"])
 stats_with_type.to_csv("stats_with_type.csv", index=False)
@@ -234,7 +234,7 @@ df_rent_duration = df_rent.copy()
 df_rent_duration['started_at'] = pd.to_datetime(df_rent_duration['started_at'])
 df_rent_duration['ended_at'] = pd.to_datetime(df_rent_duration['ended_at'])
 
-df_rent_duration['ride_duration'] = (df_rent_duration['ended_at'] - df_rent_duration['started_at']).dt.total_seconds() / 60  # 转换为分钟
+df_rent_duration['ride_duration'] = (df_rent_duration['ended_at'] - df_rent_duration['started_at']).dt.total_seconds() / 60 # Convert to minutes
 df_rent_duration = df_rent_duration[df_rent_duration['ride_duration'] >= 0]
 df_rent_duration = df_rent_duration[df_rent_duration['ride_duration'] <= 120]
 df_rent_duration.to_csv("df_rent_duration.csv", index=False)
